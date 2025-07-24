@@ -3,6 +3,7 @@ import express from 'express'
 const app = express();
 
 app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
     res.send('<h1>Hello, World!</h1>');
 });
 
